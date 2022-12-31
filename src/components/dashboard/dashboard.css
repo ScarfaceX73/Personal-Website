@@ -1,0 +1,491 @@
+.dashboard {
+  height: 780px;
+  /* background-color: #f1f3f9; */
+  background-image: linear-gradient(to bottom right, #fcfcfc, #c2aeec);
+}
+
+.main-div {
+  z-index: -1;
+}
+
+.intro-container {
+  display: flex;
+  position: relative;
+}
+
+div > .developer-logo {
+  position: absolute;
+  top: 50px;
+  right: 300px;
+  box-shadow: #cbccce;
+}
+
+div > .basic-intro {
+  position: absolute;
+  width: 516px;
+  height: 208px;
+  left: 300px;
+  top: 150px;
+}
+
+.basic-intro > .name {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 108px;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+h1 + .web-dev {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+div > .hire-me,
+.submit-btn {
+  background: rgba(119, 51, 255, 0.92);
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  width: 150px;
+  height: 42px;
+  color: rgba(255, 255, 255, 0.92);
+  border: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+div > .hire-me {
+  margin: 50px 0px 0px 0px;
+}
+
+div > .resume {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(119, 51, 255, 0.92);
+  border: 0px;
+  margin: 50px 0px 0px 30px;
+  transition: all 0.3s ease 0s;
+  background-color: inherit;
+}
+
+div > .resume:hover {
+  color: #4807ca;
+}
+
+div > .hire-me:hover,
+.submit-btn:hover {
+  background-color: #4807ca;
+}
+
+.skill-icons {
+  position: relative;
+  width: 224px;
+  height: 56px;
+  left: 300px;
+  top: 500px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.skill-icons > p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
+
+.skills {
+  margin-right: 15px;
+}
+
+.cards {
+  display: flex;
+  position: absolute;
+  width: 1232px;
+  height: 198px;
+  top: 800px;
+  left: 344px;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 370px;
+  height: 198px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: rgba(243, 243, 243, 1);
+  margin-right: 40px;
+  box-shadow: 0 0 1px grey;
+  position: relative;
+}
+
+.card-box > h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.92);
+  margin: 100px 0px 0px 25px;
+}
+
+.card-box > p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.82);
+  width: 325px;
+  height: 36px;
+  margin: 10px 0px 0px 25px;
+}
+
+.sparkle,
+.heart,
+.light {
+  position: absolute;
+  font-size: 20px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  top: 32px;
+  left: 32px;
+}
+
+.sparkle {
+  background-color: #a199ff;
+  color: #ffff00;
+}
+
+.heart {
+  background-color: #ff7dac;
+  color: #fffcfc;
+}
+
+.light {
+  background-color: #bff4ff;
+  color: #5096ff;
+}
+
+.sparkle-icon,
+.heart-icon,
+.light-icon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.quote-container {
+  position: absolute;
+  width: 642px;
+  height: 178px;
+  left: 639px;
+  top: 1083px;
+  opacity: 0.54;
+  font-family: "Plus Jakarta Sans";
+  line-height: 60px;
+  text-align: center;
+  font-size: 48px;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.quote-container > div > .quote {
+  font-weight: 400;
+}
+
+.modern-style {
+  position: relative;
+  width: auto;
+  height: 686px;
+  left: 0px;
+  top: 650px;
+  z-index: 0;
+}
+
+.modern-style > .minimalist-design {
+  position: relative;
+  width: 550px;
+  left: 344px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+}
+
+.modern-style > .projects {
+  position: relative;
+  height: 481px;
+  left: 0px;
+  top: 100px;
+  background-image: linear-gradient(to bottom right, #fcfcfc, #c2aeec);
+  display: flex;
+  z-index: 1;
+}
+
+.modern-style > .minimalist-design > h6 {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7733ff;
+}
+
+.modern-style > .minimalist-design > h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.82);
+  margin-top: 8px;
+}
+
+.modern-style > .minimalist-design > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 16px;
+  width: 466px;
+  height: 48px;
+}
+
+.projects > div > .project-details {
+  position: relative;
+  width: 468px;
+  height: 117px;
+  left: 344px;
+  top: 35px;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 24px;
+  margin: 17px;
+  box-shadow: 0 0 1px grey;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  transition: all 0.1s ease 0s;
+  z-index: 2;
+}
+
+.projects > div > .project-details:hover {
+  box-shadow: 0 0 1px #7733ff;
+  border: 3px solid #8a54f7;
+}
+
+.projects > div > .project-details > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #7733ff;
+  margin-top: 23.8px;
+  margin-left: 24px;
+}
+
+.projects > div > .project-details > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.72);
+  margin-left: 24px;
+  margin-top: 7.93px;
+  z-index: 3;
+}
+
+.projects > .project-grid {
+  position: absolute;
+  width: 895px;
+  height: 825px;
+  left: 890px;
+  top: -170px;
+  display: grid;
+  grid-template-columns: 400px 400px;
+}
+
+.project-grid > .project-container {
+  box-sizing: border-box;
+  width: 349px;
+  height: 368px;
+  background: #6600eb;
+  border-radius: 24px;
+  box-shadow: 0 0 3px grey;
+  z-index: 4;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.info-div {
+  margin-top: 100px;
+}
+
+.info-div > p,
+.info-div > div > a {
+  color: #ffffff;
+  text-align: center;
+}
+
+.info-div > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.info-div > div > a {
+  height: 20px;
+  width: 20px;
+  font-size: x-large;
+  margin-right: 20px;
+}
+
+.info-div > p {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  width: 244px;
+  height: 125px;
+}
+
+.image > .project-thumb {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+  height: 368px;
+  width: 349px;
+  border-radius: 25px;
+}
+
+.project-thumb:hover {
+  opacity: 0;
+}
+
+.detailed-ui {
+  position: relative;
+  width: 714px;
+  height: 182px;
+  left: 344px;
+  top: 900px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+}
+
+.detailed-ui > h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ff7dac;
+}
+
+.detailed-ui > h3 {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 9px;
+  color: rgba(0, 0, 0, 0.82);
+}
+.detailed-ui > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-top: 16px;
+  margin-bottom: 26px;
+  width: 466px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.detailed-ui > a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #7733ff;
+  margin-right: 29px;
+}
+.footer {
+  position: absolute;
+  width: 1232px;
+  height: 146px;
+  left: 344px;
+  top: 2789px;
+}
+.contact-me-form {
+  background-image: linear-gradient(to bottom right, #7e17f5, #a277fd, #d332fc);
+  height: 937.4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.contact-me-form > div {
+  position: relative;
+  background-color: #ffffff;
+  height: 700px;
+  width: 500px;
+  border-radius: 25px;
+  border: 1px solid inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-me-form > div > .contact-form {
+  border-radius: 25px;
+  transition: all 0.3s ease 0s;
+  width: 85%;
+  height: 85%;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+}
+.contact-form > h1 {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 108px;
+  color: rgba(119, 51, 255, 1);
+}
+.contact-form > .label,
+.contact-form > .input,
+.contact-form > .textarea {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  top: 50px;
+  width: 100%;
+}
+.contact-form > .input,
+.contact-form > .textarea {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid grey;
+  outline: none;
+}
+.contact-form > .label {
+  color: rgba(0, 0, 0, 0.774);
+  margin-bottom: 20px;
+}
+.contact-form > .input {
+  margin-bottom: 20px;
+}
+.contact-form > .textarea {
+  height: 100px;
+}
+.submit-btn {
+  position: relative;
+  top: 150px;
+}
