@@ -23,29 +23,29 @@ const Dashboard = () => {
         id: 0,
         img: chatApp,
         description: "An interactive one-on-one chat app with socket.io. Join a room and start chatting with your friends.",
-        deployedUrl: "",
-        githubUrl: ""
+        deployedUrl: "https://6341a5b0a5687361d7946251--startling-croquembouche-2f8126.netlify.app/",
+        githubUrl: "https://github.com/ScarfaceX73/socket-io-project-fe"
     },
     {
         id: 1,
         img: JobApp,
         description: "A web app for recruiters and aspirants. Recruiters can post a job for the aspirants to view.",
-        deployedUrl: "",
-        githubUrl: ""
+        deployedUrl: "https://precious-duckanoo-a1ce08.netlify.app/",
+        githubUrl: "https://github.com/ScarfaceX73/job-vacancies-fe"
     },
     {
         id: 2,
         img: moneyManager,
         description: "A financial support web app helps the client with their income & expense records.",
-        deployedUrl: "",
-        githubUrl: ""
+        deployedUrl: "https://6318dd807e6c05006f3ada29--sparkling-pika-f11577.netlify.app/",
+        githubUrl: "https://github.com/ScarfaceX73/react-money-manager-fe"
     },
     {
         id: 3,
         img: JwtAuth,
         description: "Jwt Auth login, logout and register page.(forget password page is on development)",
-        deployedUrl: "",
-        githubUrl: ""
+        deployedUrl: "https://github.com/ScarfaceX73/url-shortner",
+        githubUrl: "https://github.com/ScarfaceX73/jwt-auth-be"
     }];
 
     const navigate = useNavigate()
@@ -105,7 +105,7 @@ const Dashboard = () => {
                 <div className='minimalist-design'>
                     <h6>My Recent Work</h6>
                     <h3>Experiences & Skills I have.</h3>
-                    <p>Here are a few past projects I've worked on. Want to see more?Github</p>
+                    <p>Here are a few past projects I've worked on. Want to see more?<a href='https://github.com/ScarfaceX73' target="_blank">Github</a></p>
                 </div>
                 <div className='projects'>
                     <div>
@@ -132,8 +132,8 @@ const Dashboard = () => {
                                             {hovered === item.id && <div className="info-div" style={{ position: "absolute" }}>
                                                 <p className='title'>{item.description}</p>
                                                 <div>
-                                                    <a className='button' href={item.deployedUrl}><RiExternalLinkLine /></a>
-                                                    <a className='button' href={item.githubUrl}><AiFillGithub /></a>
+                                                    <a className='button' href={item.deployedUrl} target="_blank"><RiExternalLinkLine /></a>
+                                                    <a className='button' href={item.githubUrl} target="_blank"><AiFillGithub /></a>
                                                 </div>
                                             </div>
                                             }
@@ -146,13 +146,11 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className='detailed-ui'>
-                <h6>Detail Oriented</h6>
-                <h3>Lighthouse, Accessibility & Browser Support.</h3>
-                <p>Awareness to ease of access, User Interface consistency, and improved User Experience.</p>
-                <a href='#'>UI Consistency</a>
-                <a href='#'>Lighthouse Score</a>
+                <h6>Start a project</h6>
+                <h3>Interested in collaborating with me?</h3>
+                <p>I’m always open to discussing product design work or partnership opportunities.</p>
+                <a href='/contact-me'>Start a Conversation!</a>
             </div>
-            <div className='footer'>footer</div>
         </div>
     )
 }

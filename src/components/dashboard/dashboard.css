@@ -380,6 +380,7 @@ div > .hire-me:hover,
   top: 900px;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
+  padding-bottom: 50px;
 }
 
 .detailed-ui > h6 {
@@ -413,13 +414,7 @@ div > .hire-me:hover,
   color: #7733ff;
   margin-right: 29px;
 }
-.footer {
-  position: absolute;
-  width: 1232px;
-  height: 146px;
-  left: 344px;
-  top: 2789px;
-}
+
 .contact-me-form {
   background-image: linear-gradient(to bottom right, #7e17f5, #a277fd, #d332fc);
   height: 937.4px;
@@ -488,4 +483,13 @@ div > .hire-me:hover,
 .submit-btn {
   position: relative;
   top: 150px;
+}
+
+.contact-me-form > div > a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.774);
 }

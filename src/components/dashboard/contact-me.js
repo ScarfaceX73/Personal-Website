@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import "./dashboard.css";
 import { useNavigate } from 'react-router-dom';
+import { IoArrowBack } from 'react-icons/io5';
 
 const ContactMe = () => {
     const form = useRef();
@@ -24,14 +25,15 @@ const ContactMe = () => {
     return (
         <div className='contact-me-form'>
             <div>
+                <a href='/'><IoArrowBack /></a>
                 <form ref={form} onSubmit={sendEmail} className="contact-form">
                     <h1>Say Hello!</h1>
-                    <label className='Name label'>Name</label>
-                    <input type="text" name="user_name" className='name input' />
+                    <label className='Name label' >Name</label>
+                    <input type="text" name="user_name" className='name input' required />
                     <label className='Name label'>Email</label>
-                    <input type="email" name="user_email" className='email input' />
+                    <input type="email" name="user_email" className='email input' required />
                     <label className='Name label'>Message</label>
-                    <textarea name="message" className='textarea' />
+                    <textarea name="message" className='textarea' required />
                     <input type="submit" value="Submit" className='submit-btn' />
                 </form>
             </div>
