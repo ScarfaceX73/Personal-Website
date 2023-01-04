@@ -23,8 +23,81 @@ html {
     opacity: 0;
   }
 }
-@media screen and (max-width: 1366px) {
-  header {
-    min-width: 800px;
+
+@media all and (min-width: 1380px) {
+  .cards {
+    display: flex;
+    margin: auto 20%;
+    height: 198px;
+    position: relative;
+    top: -60px;
+  }
+
+  .projects {
+    height: 481px;
+    display: flex;
+    position: relative;
+    left: 0px;
+    top: 100px;
+    background-image: linear-gradient(to bottom right, #fcfcfc, #c2aeec);
+  }
+
+  .experience {
+    margin: 35px 0% 0% 18%;
+  }
+
+  .project-grid {
+    position: relative;
+    width: 55%;
+    height: 800px;
+    top: -160px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    margin: auto 5%;
+  }
+
+  .detailed-ui {
+    position: relative;
+    margin: auto 20%;
+    height: 182px;
+    top: 250px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .cards {
+    display: flex;
+    margin: auto 10%;
+    height: 198px;
+    position: relative;
+    top: -60px;
+  }
+
+  .experience {
+    display: flex;
+    margin: 50px 0%;
+  }
+
+  .project-grid {
+    position: relative;
+    width: 55%;
+    height: 800px;
+    top: 30px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    margin: auto;
+  }
+
+  .detailed-ui {
+    position: relative;
+    margin: auto 20%;
+    height: 182px;
+    top: 600px;
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    padding-bottom: 100px;
   }
 }

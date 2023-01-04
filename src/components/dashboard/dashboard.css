@@ -90,9 +90,9 @@ div > .hire-me:hover,
 
 .skill-icons {
   position: relative;
-  width: 224px;
+  margin: auto 17%;
+  min-width: 224px;
   height: 56px;
-  left: 17%;
   top: 500px;
   color: rgba(0, 0, 0, 0.54);
 }
@@ -110,19 +110,9 @@ div > .hire-me:hover,
   margin-right: 15px;
 }
 
-.cards {
-  display: flex;
-  position: absolute;
-  width: 1232px;
-  height: 198px;
-  top: 800px;
-  left: 18%;
-}
-
-.card1,
-.card2,
-.card3 {
-  width: 370px;
+.card-box {
+  width: 100%;
+  min-width: 330px;
   height: 198px;
   border-radius: 25px;
   background-color: #ffffff;
@@ -150,7 +140,6 @@ div > .hire-me:hover,
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 0, 0, 0.82);
-  width: 325px;
   height: 36px;
   margin: 10px 0px 0px 25px;
 }
@@ -191,11 +180,10 @@ div > .hire-me:hover,
 }
 
 .quote-container {
-  position: absolute;
+  position: relative;
+  top: 80px;
+  margin: auto;
   width: 642px;
-  height: 178px;
-  left: 34%;
-  top: 1083px;
   opacity: 0.54;
   font-family: "Plus Jakarta Sans";
   line-height: 60px;
@@ -211,35 +199,23 @@ div > .hire-me:hover,
 .modern-style {
   position: relative;
   width: auto;
-  height: 686px;
+  height: 886px;
   left: 0px;
-  top: 650px;
+  top: 200px;
   z-index: 0;
 }
 
 .modern-style > .minimalist-design {
-  position: relative;
-  width: 550px;
-  left: 18%;
+  margin: auto 20%;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
-}
-
-.modern-style > .projects {
-  position: relative;
-  height: 481px;
-  left: 0px;
-  top: 100px;
-  background-image: linear-gradient(to bottom right, #fcfcfc, #c2aeec);
-  display: flex;
-  z-index: 1;
 }
 
 .modern-style > .minimalist-design > h6 {
   font-weight: 800;
   font-size: 16px;
   line-height: 20px;
-  color: #7733ff;
+  color: #ff7dac;
 }
 
 .modern-style > .minimalist-design > h3 {
@@ -260,16 +236,24 @@ div > .hire-me:hover,
   height: 48px;
 }
 
-.projects > div {
-  position: relative;
-  left: 18%;
-  top: 35px;
+.minimalist-design > p > a {
+  color: #7733ff;
+  text-decoration: none;
+}
+
+.project-details > p > a {
+  text-decoration: none;
+  color: #7733ff;
+}
+
+.projects {
+  width: 100%;
+  z-index: 1;
 }
 
 .projects > div > .project-details {
-  width: 468px;
+  width: 480px;
   height: 117px;
-
   background: #ffffff;
   border: 1px solid #f3f3f3;
   border-radius: 24px;
@@ -279,6 +263,7 @@ div > .hire-me:hover,
   font-style: normal;
   transition: all 0.1s ease 0s;
   z-index: 2;
+  box-sizing: border-box;
 }
 
 .projects > div > .project-details:hover {
@@ -305,16 +290,6 @@ div > .hire-me:hover,
   z-index: 3;
 }
 
-.projects > .project-grid {
-  position: absolute;
-  width: 895px;
-  height: 825px;
-  left: 47%;
-  top: -170px;
-  display: grid;
-  grid-template-columns: 400px 400px;
-}
-
 .project-grid > .project-container {
   box-sizing: border-box;
   width: 349px;
@@ -323,6 +298,15 @@ div > .hire-me:hover,
   border-radius: 24px;
   box-shadow: 0 0 3px grey;
   z-index: 4;
+}
+
+.featured-tools {
+  background-color: #ffffff;
+  height: 35px;
+  width: max-content;
+  border-radius: 5px;
+  align-items: center;
+  margin: auto;
 }
 
 .image {
@@ -341,7 +325,7 @@ div > .hire-me:hover,
   text-align: center;
 }
 
-.info-div > div {
+.info-div > .url-links {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -374,17 +358,6 @@ div > .hire-me:hover,
 
 .project-thumb:hover {
   opacity: 0;
-}
-
-.detailed-ui {
-  position: relative;
-  width: 714px;
-  height: 182px;
-  left: 18%;
-  top: 900px;
-  font-family: "Plus Jakarta Sans";
-  font-style: normal;
-  padding-bottom: 50px;
 }
 
 .detailed-ui > h6 {
