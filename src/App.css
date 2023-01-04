@@ -17,3 +17,13 @@ html {
   width: 8px;
   border-left: 1px solid #e6ecf8;
 }
+
+@media screen and (max-width: 1774px) {
+  .developer-logo {
+    opacity: 0;
+  }
+
+  header {
+    min-width: 1640px;
+  }
+}
