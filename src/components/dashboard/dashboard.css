@@ -24,7 +24,7 @@ div > .basic-intro {
   position: absolute;
   width: 516px;
   height: 208px;
-  left: 300px;
+  left: 17%;
   top: 150px;
 }
 
@@ -92,7 +92,7 @@ div > .hire-me:hover,
   position: relative;
   width: 224px;
   height: 56px;
-  left: 300px;
+  left: 17%;
   top: 500px;
   color: rgba(0, 0, 0, 0.54);
 }
@@ -116,7 +116,7 @@ div > .hire-me:hover,
   width: 1232px;
   height: 198px;
   top: 800px;
-  left: 344px;
+  left: 18%;
 }
 
 .card1,
@@ -194,7 +194,7 @@ div > .hire-me:hover,
   position: absolute;
   width: 642px;
   height: 178px;
-  left: 639px;
+  left: 34%;
   top: 1083px;
   opacity: 0.54;
   font-family: "Plus Jakarta Sans";
@@ -220,7 +220,7 @@ div > .hire-me:hover,
 .modern-style > .minimalist-design {
   position: relative;
   width: 550px;
-  left: 344px;
+  left: 18%;
   font-family: "Plus Jakarta Sans";
   font-style: normal;
 }
@@ -260,12 +260,16 @@ div > .hire-me:hover,
   height: 48px;
 }
 
-.projects > div > .project-details {
+.projects > div {
   position: relative;
+  left: 18%;
+  top: 35px;
+}
+
+.projects > div > .project-details {
   width: 468px;
   height: 117px;
-  left: 344px;
-  top: 35px;
+
   background: #ffffff;
   border: 1px solid #f3f3f3;
   border-radius: 24px;
@@ -305,7 +309,7 @@ div > .hire-me:hover,
   position: absolute;
   width: 895px;
   height: 825px;
-  left: 890px;
+  left: 47%;
   top: -170px;
   display: grid;
   grid-template-columns: 400px 400px;
@@ -376,7 +380,7 @@ div > .hire-me:hover,
   position: relative;
   width: 714px;
   height: 182px;
-  left: 344px;
+  left: 18%;
   top: 900px;
   font-family: "Plus Jakarta Sans";
   font-style: normal;

@@ -18,12 +18,13 @@ html {
   border-left: 1px solid #e6ecf8;
 }
 
-@media screen and (max-width: 1774px) {
+@media screen and (max-width: 1780px) {
   .developer-logo {
     opacity: 0;
   }
-
+}
+@media screen and (max-width: 1366px) {
   header {
-    min-width: 1640px;
+    min-width: 800px;
   }
 }
