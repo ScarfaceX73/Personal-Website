@@ -18,8 +18,8 @@ const Header = () => {
                 </ul>
             </nav>
             <div className='menubar-right'>
-                <a href='https://github.com/ScarfaceX73' target="_blank" className='icon github'><AiFillGithub className='github-icon' /></a>
-                <a href='https://www.linkedin.com/in/srinivasa-durai' target="_blank" className='icon linkdin'><AiFillLinkedin className='linkdin-icon' /></a>
+                <a href='https://github.com/ScarfaceX73' target="_blank" className='icon github' rel="noreferrer"><AiFillGithub className='github-icon' /></a>
+                <a href='https://www.linkedin.com/in/srinivasa-durai' target="_blank" className='icon linkdin' rel="noreferrer"><AiFillLinkedin className='linkdin-icon' /></a>
             </div>
         </header>
     )

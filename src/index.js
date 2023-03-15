@@ -4,7 +4,6 @@ import App from './App';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 import ContactMe from './components/dashboard/contact-me';
 

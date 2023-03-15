@@ -11,8 +11,8 @@ import { RiFlashlightFill, RiExternalLinkLine } from "react-icons/ri";
 import { AiFillGithub } from "react-icons/ai"
 import chatApp from "../../resourses/projects/chatApp.png";
 import moneyManager from "../../resourses/projects/money-ma.png";
-import JobApp from "../../resourses/projects/JobsNow.png";
-import JwtAuth from "../../resourses/projects/login.png";
+import jobApp from "../../resourses/projects/JobsNow.png";
+import pizza from "../../resourses/projects/pizza.png";
 import { useNavigate } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -30,7 +30,7 @@ const Dashboard = () => {
     },
     {
         id: 1,
-        img: JobApp,
+        img: jobApp,
         description: "A web app for recruiters and aspirants. Recruiters can post a job for the aspirants to view.",
         deployedUrl: "https://precious-duckanoo-a1ce08.netlify.app/",
         githubUrl: "https://github.com/ScarfaceX73/job-vacancies-fe",
@@ -48,8 +48,8 @@ const Dashboard = () => {
     },
     {
         id: 3,
-        img: JwtAuth,
-        description: "Jwt Auth login, logout and register page.(forget password page is on development)",
+        img: pizza,
+        description: "A Pizza delivery app to help the clients taste and create their favorite Pizza.",
         deployedUrl: "https://github.com/ScarfaceX73/url-shortner",
         githubUrl: "https://github.com/ScarfaceX73/jwt-auth-be",
         tool1: SiExpress,
@@ -72,7 +72,7 @@ const Dashboard = () => {
                         <h4 className='web-dev'>Front-end <strong>Web-developer</strong></h4>
                         <div>
                             <button className='hire-me' onClick={handleContactMe}>Hire Me</button>
-                            <a className='resume' href='https://drive.google.com/file/d/1j3gZen5QXoyof-cRCpnviu8WMMxuupTe/view?usp=sharing' target='_blank'>Resume</a>
+                            <a className='resume' href='https://drive.google.com/file/d/1j3gZen5QXoyof-cRCpnviu8WMMxuupTe/view?usp=sharing' target='_blank' rel="noreferrer">Resume</a>
                         </div>
                     </div>
                     <div>
@@ -113,59 +113,66 @@ const Dashboard = () => {
             <div className='modern-style' id='projects-container'>
                 <div className='minimalist-design'>
                     <h6>My Recent Work</h6>
-                    <h3>Experiences & Skills I have.</h3>
-                    <p>Here are a few past projects I've worked on. Want to see more?<a href='https://github.com/ScarfaceX73' target="_blank">Github</a></p>
+                    <h3>Works & Experiences I have.</h3>
+                    <p>Here are a few past projects I've worked on. Want to see more?<a href='https://github.com/ScarfaceX73' target="_blank" rel="noreferrer">Github</a></p>
                 </div>
                 <div className='projects'>
                     <div className='experience'>
                         <div className='project-details'>
-                            <h3>Languages I speak:</h3>
-                            <p>I enjoy building User Interfaces with <span style={{ color: "#7733ff" }}>HTML, CSS, Javascript, ReactJS, NodeJS & MongoDB</span>.</p>
-                        </div>
-                        <div className='project-details'>
                             <h3>Experiences I draw from:</h3>
-                            <p>Currently, I'm focused on building modern, performant and maintainable code at <a href='https://sparkplustech.com/' target='_blank'>Spark+ Technologies</a> as an Intern.</p>
+                            <p>Currently, I'm focused on building modern, performant and maintainable code at <a href='https://sparkplustech.com/' target='_blank' rel="noreferrer">Spark+ Technologies</a> as an Intern.</p>
                         </div>
                         <div className='project-details'>
                             <h3>Proof of my skills:</h3>
-                            <p>I was part of the full-stack development program by <a href='https://www.guvi.in/' target='_blank'>GUVI Geek Networks, IITM Research Park</a>. </p>
+                            <p>I was part of the full-stack development program by <a href='https://www.guvi.in/' target='_blank' rel="noreferrer">GUVI Geek Networks, IITM Research Park</a>. </p>
+                        </div>
+                        <div className='project-details'>
+                            <h3>A small achievement of mine:</h3>
+                            <p>Participated in Tamil Nadu's <span style={{ color: "#7733ff" }}>Corepathi</span> and won 12.5 Lakhs INR. Answered 12 out of 15 questions.</p>
                         </div>
                     </div>
                     <div className='project-grid'>
                         {projects.map((item) => {
                             return (
-                                <>
-                                    <div className='columns project-container' key={item.id} onMouseEnter={() => { setHovered(item.id) }} onMouseLeave={() => { setHovered(undefined) }}>
-                                        <div className='image'>
-                                            <img className='project-thumb' src={item.img} style={{ opacity: hovered === item.id ? 0.2 : 1 }} />
-                                            {hovered === item.id && <div className="info-div" style={{ position: "absolute" }}>
-                                                <p className='title'>{item.description}</p>
-                                                <div className='featured-tools'>
-                                                    <SiJavascript style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
-                                                    <SiReact style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
-                                                    <SiNodedotjs style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
-                                                    <item.tool1 style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
-                                                    <item.tool2 style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
-                                                </div>
-                                                <div className='url-links'>
-                                                    <a className='button' href={item.deployedUrl} target="_blank"><RiExternalLinkLine /></a>
-                                                    <a className='button' href={item.githubUrl} target="_blank"><AiFillGithub /></a>
-                                                </div>
+                                <div className='columns project-container' key={item.id} onMouseEnter={() => { setHovered(item.id) }} onMouseLeave={() => { setHovered(undefined) }}>
+                                    <div className='image'>
+                                        <img className='project-thumb' src={item.img} style={{ opacity: hovered === item.id ? 0.2 : 1 }} />
+                                        {hovered === item.id && <div className="info-div" style={{ position: "absolute" }}>
+                                            <p className='title'>{item.description}</p>
+                                            <div className='featured-tools'>
+                                                <SiJavascript style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
+                                                <SiReact style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
+                                                <SiNodedotjs style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
+                                                <item.tool1 style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
+                                                <item.tool2 style={{ margin: "5px 5px", color: "#6600eb", fontSize: "24px" }} />
                                             </div>
-                                            }
+                                            <div className='url-links'>
+                                                <a className='button' href={item.deployedUrl} target="_blank" rel="noreferrer"><RiExternalLinkLine /></a>
+                                                <a className='button' href={item.githubUrl} target="_blank" rel="noreferrer"><AiFillGithub /></a>
+                                            </div>
                                         </div>
+                                        }
                                     </div>
-                                </>
+                                </div>
                             )
                         })}
                     </div>
                 </div>
             </div>
             <div className='detailed-ui'>
-                <h6>Start a project</h6>
-                <h3>Interested in collaborating with me?</h3>
-                <p>I’m always open to discussing product design work or partnership opportunities.</p>
-                <a href='/contact-me'>Start a Conversation!</a>
+                <h6>My Skills</h6>
+                <h3>The Languages I Speak!</h3>
+                <p>I enjoy building User Interfaces with <span style={{ color: "#ff7dac" }}>HTML, CSS, Javascript, ReactJS, NodeJS & MongoDB</span>.
+                    I'm also well versed in React-frameworks like Redux, React-router, Formik and other.    </p>
+
+            </div>
+            <div className='footer'>
+                <div>
+                    <h6>Start a project</h6>
+                    <h3>Interested in collaborating with me?</h3>
+                    <p>I'm always open to discussing product design work or partnership opportunities.</p>
+                    <a href='/contact-me'>Start a Conversation!</a>
+                </div>
             </div>
         </div>
     )
