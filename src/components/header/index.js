@@ -2,8 +2,15 @@ import React from 'react'
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { BsPlayFill } from "react-icons/bs"
 import "./header.css";
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
+    const navigate = useNavigate()
+    const handleContactMe = () => {
+        navigate("/contact-me")
+    };
+
     return (
         <header>
             <h1 className='logo'>S<span>ri</span></h1>
@@ -14,7 +21,7 @@ const Header = () => {
                     </div>
                         <BsPlayFill style={{ marginTop: "2px" }} /></a></li>
                     <li><a href='#about-container'>About</a></li>
-                    <li><a href='/contact-me'>Contact</a></li>
+                    <li><a href='https://srinivasa-durai.netlify.app/contact-me'>Contact</a></li>
                 </ul>
             </nav>
             <div className='menubar-right'>
