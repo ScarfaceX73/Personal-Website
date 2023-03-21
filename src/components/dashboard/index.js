@@ -11,7 +11,7 @@ import { RiFlashlightFill, RiExternalLinkLine } from "react-icons/ri";
 import { AiFillGithub } from "react-icons/ai"
 import chatApp from "../../resourses/projects/chatApp.png";
 import moneyManager from "../../resourses/projects/money-ma.png";
-import jobApp from "../../resourses/projects/JobsNow.png";
+import video from "../../resourses/projects/video.png";
 import pizza from "../../resourses/projects/pizza.png";
 import { useNavigate } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -23,35 +23,35 @@ const Dashboard = () => {
         id: 0,
         img: chatApp,
         description: "An interactive one-on-one chat app with socket.io. Join a room and start chatting with your friends.",
-        deployedUrl: "https://6341a5b0a5687361d7946251--startling-croquembouche-2f8126.netlify.app/",
+        deployedUrl: "https://startling-croquembouche.netlify.app",
         githubUrl: "https://github.com/ScarfaceX73/socket-io-project-fe",
         tool1: SiSocketdotio,
         tool2: SiTailwindcss
     },
     {
         id: 1,
-        img: jobApp,
-        description: "A web app for recruiters and aspirants. Recruiters can post a job for the aspirants to view.",
-        deployedUrl: "https://precious-duckanoo-a1ce08.netlify.app/",
-        githubUrl: "https://github.com/ScarfaceX73/job-vacancies-fe",
+        img: video,
+        description: "A Video Chat app with webRTC. Distance is just a number, Join your friend from across the world now.",
+        deployedUrl: "https://jovial-snickerdoodle-ba9fd1.netlify.app",
+        githubUrl: "https://github.com/ScarfaceX73/video-chat-fe",
         tool1: SiExpress,
-        tool2: SiMongodb
+        tool2: SiSocketdotio
     },
     {
         id: 2,
         img: moneyManager,
         description: "A financial support web app helps the client with their income & expense records.",
-        deployedUrl: "https://6318dd807e6c05006f3ada29--sparkling-pika-f11577.netlify.app/",
-        githubUrl: "https://github.com/ScarfaceX73/react-money-manager-fe",
+        deployedUrl: "https://prismatic-sunflower-f951cc.netlify.app",
+        githubUrl: "https://github.com/ScarfaceX73/Money-manager",
         tool1: SiTailwindcss,
         tool2: SiFirebase
     },
     {
         id: 3,
         img: pizza,
-        description: "A Pizza delivery app to help the clients taste and create their favorite Pizza.",
-        deployedUrl: "https://github.com/ScarfaceX73/url-shortner",
-        githubUrl: "https://github.com/ScarfaceX73/jwt-auth-be",
+        description: "A Pizza delivery app to help the clients order and customize their favorite Pizza.",
+        deployedUrl: "https://brilliant-malasada-8dfefd.netlify.app",
+        githubUrl: "https://github.com/ScarfaceX73/Pizza-delivery",
         tool1: SiExpress,
         tool2: SiMongodb
 
@@ -72,7 +72,7 @@ const Dashboard = () => {
                         <h4 className='web-dev'>Front-end <strong>Web-developer</strong></h4>
                         <div>
                             <button className='hire-me' onClick={handleContactMe}>Hire Me</button>
-                            <a className='resume' href='https://drive.google.com/file/d/1j3gZen5QXoyof-cRCpnviu8WMMxuupTe/view?usp=sharing' target='_blank' rel="noreferrer">Resume</a>
+                            <a className='resume' href='https://drive.google.com/file/d/1HAHHWjOMm_PdzCu8bQU_wreA7np0ZU_y/view?usp=sharing' target='_blank' rel="noreferrer">Resume</a>
                         </div>
                     </div>
                     <div>
