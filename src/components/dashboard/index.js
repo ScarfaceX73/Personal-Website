@@ -71,7 +71,7 @@ const Dashboard = () => {
                         <h1 className='name'>I'm <span>Srinivasa</span>.</h1>
                         <h4 className='web-dev'>Front-end <strong>Web-developer</strong></h4>
                         <div>
-                            <button className='hire-me' onClick={handleContactMe}>Hire Me</button>
+                            <button className='hire-me' onClick={handleContactMe} style={{ cursor: "pointer" }}>Hire Me</button>
                             <a className='resume' href='https://drive.google.com/file/d/1HAHHWjOMm_PdzCu8bQU_wreA7np0ZU_y/view?usp=sharing' target='_blank' rel="noreferrer">Resume</a>
                         </div>
                     </div>
