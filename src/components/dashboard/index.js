@@ -171,7 +171,7 @@ const Dashboard = () => {
                     <h6>Start a project</h6>
                     <h3>Interested in collaborating with me?</h3>
                     <p>I'm always open to discussing product design work or partnership opportunities.</p>
-                    <a href='/contact-me'>Start a Conversation!</a>
+                    <a onClick={handleContactMe} style={{ cursor: "pointer" }}>Start a Conversation!</a>
                 </div>
             </div>
         </div>

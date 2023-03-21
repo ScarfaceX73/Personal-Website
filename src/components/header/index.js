@@ -21,7 +21,7 @@ const Header = () => {
                     </div>
                         <BsPlayFill style={{ marginTop: "2px" }} /></a></li>
                     <li><a href='#about-container'>About</a></li>
-                    <li><a href='https://srinivasa-durai.netlify.app/contact-me'>Contact</a></li>
+                    <li><a onClick={handleContactMe} style={{ cursor: "pointer" }}>Contact</a></li>
                 </ul>
             </nav>
             <div className='menubar-right'>
